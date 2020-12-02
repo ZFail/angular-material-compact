@@ -53,4 +53,4 @@ $theme: map-merge(
 @include angular-material-typography($typography);
 
 @import "./custom-component-themes.scss";
-@include custom-components-theme();
+@include custom-components-theme($theme);

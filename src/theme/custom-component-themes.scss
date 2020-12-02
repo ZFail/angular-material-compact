@@ -2,10 +2,14 @@
 @import "./components/button";
 @import "./components/chips";
 @import "./components/shared";
+@import "./components/tab";
+@import "./components/list";
 
 @mixin custom-components-theme($theme) {
   @include button-theme($theme);
   @include form-field-theme($theme);
   @include chips-theme($theme);
   @include shared-theme($theme);
+  @include tab-theme($theme);
+  @include list-theme($theme);
 }

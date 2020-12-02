@@ -33,20 +33,20 @@
     width: 1.4em !important;
     height: 1.4em !important;
   }
-  .mat-button .mat-button-wrapper > *,
-  .mat-flat-button .mat-button-wrapper > *,
-  .mat-stroked-button .mat-button-wrapper > *,
-  .mat-raised-button .mat-button-wrapper > *,
-  .mat-icon-button .mat-button-wrapper > *,
-  .mat-fab .mat-button-wrapper > *,
-  .mat-mini-fab .mat-button-wrapper > * {
-    vertical-align: top !important;
-  }
+  //.mat-button .mat-button-wrapper > *,
+  //.mat-flat-button .mat-button-wrapper > *,
+  //.mat-stroked-button .mat-button-wrapper > *,
+  //.mat-raised-button .mat-button-wrapper > *,
+  //.mat-icon-button .mat-button-wrapper > *,
+  //.mat-fab .mat-button-wrapper > *,
+  //.mat-mini-fab .mat-button-wrapper > * {
+  //  vertical-align: top !important;
+  //}
   .mat-mini-fab .mat-button-wrapper,
   .mat-icon-button .mat-button-wrapper {
     width: 1em !important;
     height: 1em !important;
     line-height: 1em !important;
-    display: inline-block !important;
+    //display: inline-block !important;
   }
 }
