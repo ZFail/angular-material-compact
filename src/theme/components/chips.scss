@@ -1,16 +1,15 @@
 @mixin chips-theme($config-or-theme) {
   .mat-chip-list-wrapper input.mat-input-element,
   .mat-chip-list-wrapper .mat-standard-chip {
-    margin: 0.05em 0.4em !important;
+    margin: 0.05em 0.2em 0.05em 0.0em !important;
   }
 
   .mat-standard-chip.mat-chip-with-trailing-icon {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    padding-right: 0.6em !important;
-    padding-left: 0.8em !important;
+    padding: 0 0.1em 0 0.3em !important;
   }
-
+  .mat-standard-chip .mat-chip-remove, .mat-standard-chip .mat-chip-trailing-icon {
+    margin-left: 0.1em !important;
+  }
   .mat-standard-chip {
     min-height: auto !important;
     height: auto !important;
