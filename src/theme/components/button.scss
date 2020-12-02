@@ -33,6 +33,16 @@
     width: 1.4em !important;
     height: 1.4em !important;
   }
+  .mat-fab {
+    line-height: 2.4em !important;
+    padding: 0 !important;
+    width: 2.4em !important;
+    height: 2.4em !important;
+  }
+  .mat-fab .mat-button-wrapper {
+    padding: 0 !important;
+    line-height: 2.4em !important;
+  }
   //.mat-button .mat-button-wrapper > *,
   //.mat-flat-button .mat-button-wrapper > *,
   //.mat-stroked-button .mat-button-wrapper > *,
