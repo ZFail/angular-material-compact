@@ -1,33 +1,78 @@
 <div class="example-container">
-    <span>Span</span>
-    <button mat-stroked-button>Button</button>
-    <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
-        <mat-icon>plus_one</mat-icon>
-    </button>
-    <mat-form-field>
-        <mat-select [formControl]="toppings" multiple placeholder="text">
-            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-        </mat-select>
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput placeholder="text" value="Text input"/>
-    </mat-form-field>
-    <mat-form-field style="width: 100%;">
-        <mat-chip-list #chipList aria-label="Fruit selection" style="width: 30em;">
-            <mat-chip removable="true">
-                chip1
-                <mat-icon matChipRemove>cancel</mat-icon>
-            </mat-chip>
-            <mat-chip removable="true">
-                chip2
-                <mat-icon matChipRemove>cancel</mat-icon>
-            </mat-chip>
-            <input placeholder="New fruit..."
-                   [matChipInputFor]="chipList"
-            >
-        </mat-chip-list>
-    </mat-form-field>
+    <div class="row">
+        <label>Span</label>
+        <div class="value">
+            <span>Span</span>
+        </div>
+    </div>
+    <div class="row">
+        <label>Button</label>
+        <div class="value">
+            <button mat-stroked-button>Button</button>
+        </div>
+    </div>
+    <div class="row">
+        <label>Icon Button</label>
+        <div class="value">
+            <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <label>Mini FAB</label>
+        <div class="value">
+            <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                <mat-icon>plus_one</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <label>Select</label>
+        <div class="value">
+            <mat-form-field>
+                <mat-select [formControl]="toppings" multiple placeholder="text">
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <label>Text input</label>
+        <div class="value">
+            <mat-form-field>
+                <input matInput placeholder="text" value="Text input"/>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <label>Chips</label>
+        <div class="value">
+            <mat-form-field style="width: 100%;">
+                <mat-chip-list #chipList aria-label="Fruit selection" style="width: 30em;">
+                    <mat-chip removable="true">
+                        chip1
+                        <mat-icon matChipRemove>cancel</mat-icon>
+                    </mat-chip>
+                    <mat-chip removable="true">
+                        chip2
+                        <mat-icon matChipRemove>cancel</mat-icon>
+                    </mat-chip>
+                    <input placeholder="New fruit..."
+                           [matChipInputFor]="chipList"
+                    >
+                </mat-chip-list>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <label>Multiselect list</label>
+        <div class="value">
+            <mat-selection-list role="list">
+                <mat-list-option role="listitem">Item 1</mat-list-option>
+                <mat-list-option role="listitem">Item 2</mat-list-option>
+                <mat-list-option role="listitem">Item 3</mat-list-option>
+            </mat-selection-list>
+        </div>
+    </div>
 </div>
