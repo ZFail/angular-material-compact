@@ -1,4 +1,4 @@
-@mixin button-component-theme($config-or-theme) {
+@mixin button-theme($config-or-theme) {
   .mat-button, .mat-stroked-button, .mat-flat-button, .mat-raised-button {
     min-width: 6em !important;
     line-height: 1.4em !important;

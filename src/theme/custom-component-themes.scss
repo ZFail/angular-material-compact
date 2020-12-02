@@ -1,7 +1,9 @@
-@import "./form-field.component.scss-theme.scss";
-@import "./button.component.scss-theme.scss";
+@import "./components/form-field";
+@import "./components/button";
+@import "./components/chips";
 
 @mixin custom-components-theme($theme) {
-  @include button-component-theme($theme);
-  @include form-field-component-theme($theme);
+  @include button-theme($theme);
+  @include form-field-theme($theme);
+  @include chips-theme($theme);
 }

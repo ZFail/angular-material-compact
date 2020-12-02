@@ -12,6 +12,8 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
 
 import { SelectCustomTriggerExample } from "./app/select-custom-trigger-example";
 import { ButtonsComponent } from "./app/components/buttons/buttons";
+import { AllComponent } from "./app/components/all/all.component";
+import { ChipsComponent } from "./app/components/chips/chips.component";
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -28,7 +30,7 @@ import { ButtonsComponent } from "./app/components/buttons/buttons";
   ],
   entryComponents: [SelectCustomTriggerExample],
 
-  declarations: [SelectCustomTriggerExample, ButtonsComponent],
+  declarations: [SelectCustomTriggerExample, ButtonsComponent, AllComponent, ChipsComponent],
   bootstrap: [SelectCustomTriggerExample]
 })
 export class AppModule {}

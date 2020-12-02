@@ -1,7 +1,7 @@
-<mat-tab-group>
+<mat-tab-group [(selectedIndex)]="tab" (selectedIndexChange)="selectTab($event)">
 	<mat-tab label="All">
 		<ng-template matTabContent>
-			Content 1 - Loaded
+			<app-all></app-all>
 		</ng-template>
 	</mat-tab>
 	<mat-tab label="Buttons">
@@ -12,6 +12,11 @@
 	<mat-tab label="Form field">
 		<ng-template matTabContent>
 			Content 3 - Loaded
+		</ng-template>
+	</mat-tab>
+  	<mat-tab label="Chips">
+		<ng-template matTabContent>
+			<app-chips></app-chips>
 		</ng-template>
 	</mat-tab>
 </mat-tab-group>
