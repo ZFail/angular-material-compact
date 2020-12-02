@@ -1,0 +1,41 @@
+@mixin button-component-theme($config-or-theme) {
+  .mat-button, .mat-stroked-button, .mat-flat-button, .mat-raised-button {
+    min-width: 6em !important;
+    line-height: 1.4em !important;
+    padding: 0 1em !important;
+  }
+  .mat-icon-button {
+    padding: 0 !important;
+    min-width: 0 !important;
+    width: 1.4em !important;
+    height: 1.4em !important;
+    line-height: 1.4em !important;
+  }
+  .mat-icon-button i, .mat-icon-button .mat-icon {
+    line-height: 1em !important;
+  }
+  .mat-icon {
+    height: 1em !important;
+    width: 1em !important;
+    font-size: 1em !important;
+  }
+  .mat-mini-fab .mat-button-wrapper {
+    padding: 0 !important;
+    line-height: 1em !important;
+  }
+  .mat-mini-fab {
+    line-height: 1.4em !important;
+    padding: 0 !important;
+    width: 1.4em !important;
+    height: 1.4em !important;
+  }
+  .mat-button .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-stroked-button .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>* {
+    vertical-align: top !important;
+  }
+  .mat-mini-fab .mat-button-wrapper, .mat-icon-button .mat-button-wrapper {
+    width: 1em !important;
+    height: 1em !important;
+    line-height: 1em !important;
+    display: inline-block !important;
+  }
+}

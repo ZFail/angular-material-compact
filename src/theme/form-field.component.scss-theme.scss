@@ -1,0 +1,39 @@
+@mixin form-field-component-theme($config-or-theme) {
+  .mat-form-field-wrapper {
+    padding-bottom: 0em;
+  }
+  .mat-form-field-infix {
+    padding: 0.05em 0;
+    border-top: 0 solid transparent;
+    width: 8em !important;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0 0 0 0;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0 0 !important;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    display: flex;
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-flex {
+    margin-top: 0 !important;
+  }
+  .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+    transform: none !important;
+  }
+  input.mat-input-element {
+    line-height: 1.4em !important;
+    margin-top: 0 !important;
+  }
+  .mat-select-value-text {
+    line-height: 1.4em !important;
+  }
+
+}
