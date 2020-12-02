@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DemoMaterialModule } from "./app/material-module";
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
 
-import { SelectCustomTriggerExample } from "./app/select-custom-trigger-example";
+import { AppComponent } from "./app/app-component";
 import { ButtonsComponent } from "./app/components/buttons/buttons";
 import { AllComponent } from "./app/components/all/all.component";
 import { ChipsComponent } from "./app/components/chips/chips.component";
@@ -28,10 +28,10 @@ import { ChipsComponent } from "./app/components/chips/chips.component";
     MatNativeDateModule,
     ReactiveFormsModule
   ],
-  entryComponents: [SelectCustomTriggerExample],
+  entryComponents: [AppComponent],
 
-  declarations: [SelectCustomTriggerExample, ButtonsComponent, AllComponent, ChipsComponent],
-  bootstrap: [SelectCustomTriggerExample]
+  declarations: [AppComponent, ButtonsComponent, AllComponent, ChipsComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
 
