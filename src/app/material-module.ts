@@ -25,7 +25,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
-import { MatNativeDateModule, MatRippleModule } from "@angular/material/core";
+import {MAT_RIPPLE_GLOBAL_OPTIONS, MatNativeDateModule, MatRippleModule, RippleGlobalOptions} from '@angular/material/core';
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
@@ -43,7 +43,13 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatTreeModule } from "@angular/material/tree";
 import { OverlayModule } from "@angular/cdk/overlay";
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
-
+const globalRippleConfig: RippleGlobalOptions = {
+  disabled: true,
+  animation: {
+    enterDuration: 0,
+    exitDuration: 0
+  }
+};
 @NgModule({
   exports: [
     A11yModule,
@@ -95,7 +101,8 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: "outline" }
-    }
+    },
+    {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig}
   ]
 })
 export class DemoMaterialModule {}
