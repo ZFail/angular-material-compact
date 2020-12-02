@@ -13,11 +13,11 @@
 }
 
 .row label {
-  flex: 2;
+  width: 8em;
 }
 
 .row .value {
-  flex: 8;
+  flex: 1;
 }
 
 .row .value>* {
