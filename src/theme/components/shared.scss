@@ -4,7 +4,7 @@
   .mat-option {
     line-height: 1.2em !important;
     height: auto !important;
-    @debug $config-or-theme;
+    @debug $config;
     //     font: {
     //   family: mat-font-family($config, button);
     //   size: mat-font-size($config, button);
