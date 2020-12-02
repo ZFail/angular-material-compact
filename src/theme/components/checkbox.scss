@@ -1,0 +1,27 @@
+@mixin checkbox-theme($config-or-theme) {
+  .mat-checkbox-inner-container {
+    height: 1em !important;
+    width: 1em !important;
+  }
+  .mat-pseudo-checkbox {
+    height: 1em !important;
+    width: 1em !important;
+  }
+
+  .mat-pseudo-checkbox {
+    border-width: calc(2em/16) !important;
+    border-radius: calc(2em/16) !important;
+  }
+
+  .mat-pseudo-checkbox-checked::after {
+    top: calc(2.4em/16) !important;
+    left: calc(1em/16) !important;
+    width: calc(8em/16) !important;
+    height: calc(3em/16) !important;
+    border-left-width: calc(2em/16) !important;
+  }
+
+  .mat-pseudo-checkbox::after {
+    border-bottom-width: calc(2em/16) !important;
+  }
+}

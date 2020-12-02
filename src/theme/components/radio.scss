@@ -1,0 +1,14 @@
+@mixin radio-theme($config-or-theme) {
+  .mat-radio-inner-circle {
+    height: 1em !important;
+    width: 1em !important;
+  }
+  .mat-radio-outer-circle {
+    height: 1em !important;
+    width: 1em !important;
+  }
+  .mat-radio-container {
+    height: 1em !important;
+    width: 1em !important;
+  }
+}

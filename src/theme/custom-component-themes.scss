@@ -4,6 +4,9 @@
 @import "./components/shared";
 @import "./components/tab";
 @import "./components/list";
+@import "./components/radio";
+@import "./components/checkbox";
+@import "./components/toggle";
 
 @mixin custom-components-theme($theme) {
   @include button-theme($theme);
@@ -12,4 +15,7 @@
   @include shared-theme($theme);
   @include tab-theme($theme);
   @include list-theme($theme);
+  @include radio-theme($theme);
+  @include checkbox-theme($theme);
+  @include toggle-theme($theme);
 }

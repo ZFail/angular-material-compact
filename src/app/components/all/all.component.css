@@ -7,7 +7,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  /*border-bottom: rgba(0, 0, 0, 0.1) 1px solid;*/
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
   padding: 0 1px;
   align-items: center;
 }
@@ -22,4 +22,9 @@
 
 .row .value>* {
   width: 100%;
+}
+
+mat-radio-group {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,29 @@
+@mixin toggle-theme($config-or-theme) {
+  .mat-slide-toggle-bar {
+    width: calc(36em/14) !important;
+    height: 1em !important;
+    border-radius: calc(8em/14) !important;
+  }
+  .mat-slide-toggle {
+    height: 1.4em !important;
+    line-height: 1.4em !important;
+  }
+  .mat-slide-toggle-thumb {
+    height: 1.4em !important;
+    width: 1.4em !important;
+  }
+  .mat-slide-toggle-thumb-container {
+    width: 1.4em !important;
+    height: 1.4em !important;
+    top: -0.2em !important;
+  }
+  .mat-slide-toggle .mat-slide-toggle-ripple {
+    top: calc(50% - 1em) !important;
+    left: calc(50% - 1em) !important;
+    height: 2em !important;
+    width: 2em !important;
+  }
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+    transform: translate3d(1.4em, 0, 0) !important;
+  }
+}

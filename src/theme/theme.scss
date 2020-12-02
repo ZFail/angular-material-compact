@@ -48,7 +48,11 @@ $theme: map-merge(
     typography: $typography
   )
 );
-
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px * $scale;
+}
 @include angular-material-theme($theme);
 @include angular-material-typography($typography);
 

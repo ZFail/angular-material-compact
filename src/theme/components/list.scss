@@ -1,5 +1,28 @@
+@import "~@angular/material/theming";
+
 @mixin list-theme($config-or-theme) {
   .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
     height: 1.2em !important;
+  }
+  $config: mat-get-typography-config($config-or-theme);
+  $font-family: mat-font-family($config);
+
+  .mat-list-base {
+    padding-top: 0 !important;
+    .mat-list-item {
+      font-size: mat-font-size($config, input);
+      @include mat-line-base(mat-font-size($config, input));
+    }
+
+    .mat-list-option {
+      font-size: mat-font-size($config, input);
+      @include mat-line-base(mat-font-size($config, input));
+    }
+
+    .mat-subheader {
+      font-family: $font-family;
+      font-size: mat-font-size($config, input);
+      font-weight: mat-font-weight($config, body-2);
+    }
   }
 }
