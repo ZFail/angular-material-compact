@@ -1,0 +1,14 @@
+@import "~@angular/material/theming";
+@mixin shared-theme($config-or-theme) {
+  $config: mat-get-typography-config($config-or-theme);
+  .mat-option {
+    line-height: 1.2em !important;
+    height: auto !important;
+    @debug $config-or-theme;
+    //     font: {
+    //   family: mat-font-family($config, button);
+    //   size: mat-font-size($config, button);
+    //   weight: mat-font-weight($config, button);
+    // }
+  }
+}

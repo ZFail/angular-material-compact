@@ -1,9 +1,11 @@
 @import "./components/form-field";
 @import "./components/button";
 @import "./components/chips";
+@import "./components/shared";
 
 @mixin custom-components-theme($theme) {
   @include button-theme($theme);
   @include form-field-theme($theme);
   @include chips-theme($theme);
+  @include shared-theme($theme);
 }
