@@ -1,0 +1,36 @@
+@mixin expansion-panel-theme($config-or-theme) {
+  .mat-expansion-panel-header {
+    height: 1.4em;
+  }
+  .mat-expansion-panel-header.mat-expanded {
+    height: 1.4em;
+  }
+  .mat-expansion-panel-header {
+    padding: 0 0.6em 0 0 !important;
+    border-radius: 0 !important;
+  }
+  .mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+  }
+  .mat-expansion-panel-header {
+    font-weight: 600;
+  }
+  .mat-expansion-panel-body {
+    padding: 0 0 0 0.6em !important;
+    border-left: 1px rgba(0,0,0,0.1) solid;
+    margin-left: 0.5em !important;
+  }
+  .mat-expansion-panel-spacing {
+    margin: 0 !important;
+  }
+  .mat-expansion-indicator::after {
+    padding: 2px !important;
+  }
+  .mat-expansion-indicator {
+    order: -1;
+    width: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

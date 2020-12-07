@@ -1,0 +1,6 @@
+@mixin card-theme($config-or-theme) {
+  .mat-card {
+    padding: 0.5em !important;
+    border-radius: 0.1em !important;
+  }
+}

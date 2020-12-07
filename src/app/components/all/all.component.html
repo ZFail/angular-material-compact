@@ -1,4 +1,49 @@
-<div class="example-container">
+<mat-card class="example-container">
+    <h3>All</h3>
+    <div class="row">
+        <button mat-raised-button style="margin-right: 0.2em;" (click)="accordion.openAll()">Expand All</button>
+        <button mat-raised-button (click)="accordion.closeAll()">Collapse All</button>
+    </div>
+    <mat-accordion #accordion="matAccordion" multi>
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Expansion panel
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+                <label>Span</label>
+                <div class="value">
+                    <span>Span</span>
+                </div>
+            </div>
+            <div class="row">
+                <label>Button</label>
+                <div class="value">
+                    <button mat-stroked-button>Button</button>
+                </div>
+            </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Expansion panel 2
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+                <label>Span</label>
+                <div class="value">
+                    <span>Span</span>
+                </div>
+            </div>
+            <div class="row">
+                <label>Button</label>
+                <div class="value">
+                    <button mat-stroked-button>Button</button>
+                </div>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
     <div class="row">
         <label>Span</label>
         <div class="value">
@@ -146,7 +191,8 @@
                 </button>
                 <span>My App</span>
                 <span style="flex: 1 1 auto;"></span>
-                <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                <button mat-icon-button class="example-icon favorite-icon"
+                        aria-label="Example icon-button with heart icon">
                     <mat-icon>favorite</mat-icon>
                 </button>
                 <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
@@ -155,4 +201,4 @@
             </mat-toolbar>
         </div>
     </div>
-</div>
+</mat-card>
