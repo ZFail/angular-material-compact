@@ -7,6 +7,7 @@
 @import "./components/radio";
 @import "./components/checkbox";
 @import "./components/toggle";
+@import "./components/slider";
 
 @mixin custom-components-theme($theme) {
   @include button-theme($theme);
@@ -18,4 +19,5 @@
   @include radio-theme($theme);
   @include checkbox-theme($theme);
   @include toggle-theme($theme);
+  @include slider-theme($theme);
 }

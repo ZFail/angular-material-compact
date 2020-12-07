@@ -44,7 +44,7 @@ import { MatTreeModule } from "@angular/material/tree";
 import { OverlayModule } from "@angular/cdk/overlay";
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
 const globalRippleConfig: RippleGlobalOptions = {
-  disabled: true,
+  disabled: false,
   animation: {
     enterDuration: 0,
     exitDuration: 0

@@ -11,4 +11,8 @@
       weight: mat-font-weight($config, input) !important;
     }
   }
+
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: auto;
+  }
 }

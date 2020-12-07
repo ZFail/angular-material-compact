@@ -3,6 +3,6 @@
   font-size: 0.75em;
 }
 mat-tab-group {
-  max-width: 40em;
+  /*max-width: 40em;*/
   margin: auto;
 }

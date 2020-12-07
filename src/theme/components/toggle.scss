@@ -1,7 +1,7 @@
 @mixin toggle-theme($config-or-theme) {
   .mat-slide-toggle-bar {
-    width: calc(36em/14) !important;
-    height: 1em !important;
+    width: 2.2em !important;
+    height: 0.8em !important;
     border-radius: calc(8em/14) !important;
   }
   .mat-slide-toggle {
@@ -9,8 +9,8 @@
     line-height: 1.4em !important;
   }
   .mat-slide-toggle-thumb {
-    height: 1.4em !important;
-    width: 1.4em !important;
+    height: 1.2em !important;
+    width: 1.2em !important;
   }
   .mat-slide-toggle-thumb-container {
     width: 1.4em !important;
@@ -24,6 +24,6 @@
     width: 2em !important;
   }
   .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
-    transform: translate3d(1.4em, 0, 0) !important;
+    transform: translate3d(1.2em, 0, 0) !important;
   }
 }

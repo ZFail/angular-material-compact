@@ -24,4 +24,7 @@
   .mat-pseudo-checkbox::after {
     border-bottom-width: calc(2em/16) !important;
   }
+  .mat-checkbox-layout .mat-checkbox-label {
+    line-height: 1.4em !important;
+  }
 }

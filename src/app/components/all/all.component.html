@@ -46,6 +46,41 @@
         </div>
     </div>
     <div class="row">
+        <label>Number input</label>
+        <div class="value">
+            <mat-form-field>
+                <input matInput placeholder="text" value="Text input" type="number"/>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <label>Infix input icon</label>
+        <div class="value">
+            <mat-form-field class="example-full-width">
+                <mat-icon matPrefix>mode_edit</mat-icon>
+                <input type="tel" matInput placeholder="555-555-1234">
+                <mat-icon matSuffix>close</mat-icon>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <label>Infix input button</label>
+        <div class="value">
+            <mat-form-field class="example-full-width">
+                <span matPrefix style="color: blue;">+7</span>
+                <!--                <mat-icon matPrefix>mode_edit</mat-icon>-->
+                <input type="tel" matInput placeholder="555-555-1234">
+                <button
+                        mat-icon-button
+                        matSuffix
+                        aria-label="Clear"
+                >
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
         <label>Chips</label>
         <div class="value">
             <mat-form-field style="width: 100%;">
@@ -74,23 +109,50 @@
                 <mat-list-option role="listitem">Item 3</mat-list-option>
             </mat-selection-list>
         </div>
-    </div>    <div class="row">
-    <label>Radio</label>
-    <div class="value">
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Option 1</mat-radio-button>
-            <mat-radio-button value="2">Option 2</mat-radio-button>
-        </mat-radio-group>
     </div>
-</div>    <div class="row">
-    <label>Checkbox</label>
-    <div class="value">
-        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+    <div class="row">
+        <label>Radio</label>
+        <div class="value">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Option 1</mat-radio-button>
+                <mat-radio-button value="2">Option 2</mat-radio-button>
+            </mat-radio-group>
+        </div>
     </div>
-</div>    <div class="row">
-    <label>Toggle</label>
-    <div class="value">
-        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+    <div class="row">
+        <label>Checkbox</label>
+        <div class="value">
+            <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        </div>
     </div>
-</div>
+    <div class="row">
+        <label>Toggle</label>
+        <div class="value">
+            <mat-slide-toggle>Slide me!</mat-slide-toggle>
+        </div>
+    </div>
+    <div class="row">
+        <label>Slider</label>
+        <div class="value">
+            <mat-slider value="50"></mat-slider>
+        </div>
+    </div>
+    <div class="row">
+        <label>Toolbar</label>
+        <div class="value">
+            <mat-toolbar color="primary">
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span>My App</span>
+                <span style="flex: 1 1 auto;"></span>
+                <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>share</mat-icon>
+                </button>
+            </mat-toolbar>
+        </div>
+    </div>
 </div>
