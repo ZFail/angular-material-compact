@@ -27,10 +27,13 @@
     padding: 2px !important;
   }
   .mat-expansion-indicator {
-    order: -1;
+    //order: -1;
     width: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .mat-expansion-panel-header.mat-expansion-toggle-indicator-before .mat-expansion-indicator {
+    margin: 0 !important;
   }
 }

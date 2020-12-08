@@ -2,7 +2,7 @@
 
 @mixin list-theme($config-or-theme) {
   .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
-    height: 1.2em !important;
+    height: auto !important;
   }
   $config: mat-get-typography-config($config-or-theme);
   $font-family: mat-font-family($config);
