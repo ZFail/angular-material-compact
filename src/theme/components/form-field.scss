@@ -1,4 +1,9 @@
+@import "~@angular/material/theming";
+
 @mixin form-field-theme($config-or-theme) {
+  $config: mat-get-color-config($config-or-theme);
+  $background: map-get($config, background);
+
   .mat-form-field-wrapper {
     padding-bottom: 0;
   }
@@ -47,5 +52,22 @@
   }
   .mat-form-field-prefix {
     padding-right: 0.3em;
+  }
+  .mat-form-field-subscript-wrapper {
+    margin-top: 0;
+    top: 100%;
+    font-size: 0.875em;
+    z-index: -1;
+  }
+  .mat-error {
+    background-color: mat-color($background, background, 1);
+    visibility: hidden;
+    padding: 0.2em 0.5em !important;
+  }
+  .mat-form-field:hover .mat-error {
+    visibility: visible;
+  }
+  .mat-form-field:hover .mat-form-field-subscript-wrapper {
+    z-index: 100;
   }
 }
