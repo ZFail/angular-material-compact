@@ -1,4 +1,7 @@
-<mat-tab-group [(selectedIndex)]="tab" (selectedIndexChange)="selectTab($event)" appearance="outline">
+<mat-tab-group [(selectedIndex)]="tab"
+			   (selectedIndexChange)="selectTab($event)"
+			   mat-align-tabs="center"
+			   appearance="outline">
 	<mat-tab label="All">
 		<ng-template matTabContent>
 			<app-all></app-all>
@@ -24,76 +27,10 @@
 			<app-list></app-list>
 		</ng-template>
 	</mat-tab>
+    <mat-tab label="Layout">
+        <ng-template matTabContent>
+            <app-layout></app-layout>
+        </ng-template>
+    </mat-tab>
 </mat-tab-group>
-<!-- <div class="example-container">
-	<mat-form-field appearance="outline">
-		<mat-select [formControl]="toppings" multiple placeholder="Toppings">
-			<mat-select-trigger>
-				{{toppings.value ? toppings.value[0] : ''}}
-				<span
-          *ngIf="toppings.value?.length > 1"
-          class="example-additional-selection"
-        >
-          (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ?
-          'other' : 'others'}})
-        </span>
-			</mat-select-trigger>
-			<mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-		</mat-select>
-	</mat-form-field>
-	<mat-form-field appearance="outline">
-		<input matInput placeholder="text" value="Sushi" />
-  </mat-form-field>
-		<mat-form-field appearance="outline">
-			<mat-select [formControl]="toppings" multiple placeholder="text">
-				<mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-			</mat-select>
-		</mat-form-field>
-		<mat-form-field appearance="outline">
-			<input matInput placeholder="text" value="Sushi" />
-  </mat-form-field>
-			<mat-form-field appearance="outline">
-				<mat-select [formControl]="toppings" multiple placeholder="text">
-					<mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-				</mat-select>
-			</mat-form-field>
-</div>
-<section>
-	<div class="example-label">All</div>
-	<div class="example-button-row">
-		<span>Label</span>
-		<button mat-stroked-button>Basic</button>
-		<button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-		<button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
-          <mat-icon>plus_one</mat-icon>
-        </button>
-		<mat-form-field>
-			<mat-select [formControl]="toppings" multiple placeholder="text">
-				<mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-			</mat-select>
-		</mat-form-field>
-		<mat-form-field>
-			<input matInput placeholder="text" value="Sushi" />
-        </mat-form-field>
-			<mat-form-field>
-				<mat-chip-list #chipList aria-label="Fruit selection" style="width: 30em;">
-					<mat-chip removable="true">
-						chip1
-						<mat-icon matChipRemove>cancel</mat-icon>
-					</mat-chip>
-					<mat-chip removable="true">
-						chip2
-						<mat-icon matChipRemove>cancel</mat-icon>
-					</mat-chip>
-					<input placeholder="New fruit..."
-                   [matChipInputFor]="chipList"
-                   >
-          </mat-chip-list>
-			</mat-form-field>
-	</div>
-</section> -->
-<!-- Copyright 2020 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license -->
+

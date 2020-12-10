@@ -73,6 +73,17 @@
         </div>
     </div>
     <div class="row">
+        <label>Select placeholder</label>
+        <div class="value">
+            <mat-form-field>
+                <mat-select placeholder="Placeholder">
+                    <mat-option>Option 1</mat-option>
+                    <mat-option>Option 2</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
         <label>Select</label>
         <div class="value">
             <mat-form-field>
@@ -132,11 +143,11 @@
                 <mat-chip-list #chipList aria-label="Fruit selection" style="width: 30em;">
                     <mat-chip removable="true">
                         chip1
-                        <mat-icon matChipRemove>cancel</mat-icon>
+                        <mat-icon matChipRemove>close</mat-icon>
                     </mat-chip>
                     <mat-chip removable="true">
                         chip2
-                        <mat-icon matChipRemove>cancel</mat-icon>
+                        <mat-icon matChipRemove>close</mat-icon>
                     </mat-chip>
                     <input placeholder="New fruit..."
                            [matChipInputFor]="chipList"

@@ -16,6 +16,7 @@ import {AllComponent} from './app/components/all/all.component';
 import {ChipsComponent} from './app/components/chips/chips.component';
 import {ListComponent} from './app/components/list/list.component';
 import {FormFieldComponent} from './app/components/form-field/form-field.component';
+import {LayoutComponent} from './app/components/layout/layout.component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -39,6 +40,7 @@ import {FormFieldComponent} from './app/components/form-field/form-field.compone
         ChipsComponent,
         ListComponent,
         FormFieldComponent,
+        LayoutComponent,
     ],
     bootstrap: [AppComponent]
 })

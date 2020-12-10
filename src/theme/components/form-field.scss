@@ -1,6 +1,6 @@
 @mixin form-field-theme($config-or-theme) {
   .mat-form-field-wrapper {
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
   .mat-form-field-infix {
     padding: 0.05em 0;
@@ -32,7 +32,7 @@
     line-height: 1.4em !important;
     margin-top: 0 !important;
   }
-  .mat-select-value-text {
+  .mat-select-value {
     line-height: 1.4em !important;
   }
   .mat-form-field-appearance-outline .mat-form-field-flex {

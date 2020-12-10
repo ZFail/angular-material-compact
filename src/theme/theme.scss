@@ -7,52 +7,63 @@ $accent: mat-palette($mat-pink, A200, A100, A400);
 
 //$scale: 11/14;
 $scale: 1;
+$body-font: 14*$scale;
 $typography: mat-typography-config(
-  $font-family: 'Roboto, "Helvetica Neue", sans-serif',
-  $display-4:
-    mat-typography-level(
-      112px * $scale,
-      112px * $scale,
-      300,
-      $letter-spacing: -0.05em
-    ),
-  $display-3:
-    mat-typography-level(
-      56px * $scale,
-      56px * $scale,
-      400,
-      $letter-spacing: -0.02em
-    ),
-  $display-2:
-    mat-typography-level(
-      45px * $scale,
-      48px * $scale,
-      400,
-      $letter-spacing: -0.005em
-    ),
-  $display-1: mat-typography-level(34px * $scale, 40px * $scale, 400),
-  $headline: mat-typography-level(24px * $scale, 32px * $scale, 400),
-  $title: mat-typography-level(20px * $scale, 32px * $scale, 500),
-  $subheading-2: mat-typography-level(16px * $scale, 28px * $scale, 400),
-  $subheading-1: mat-typography-level(15px * $scale, 24px * $scale, 400),
-  $body-2: mat-typography-level(14px * $scale, 24px * $scale, 500),
-  $body-1: mat-typography-level(14px * $scale, 20px * $scale, 400),
-  $caption: mat-typography-level(12px * $scale, 20px * $scale, 400),
-  $button: mat-typography-level(14px * $scale, 14px * $scale, 500),
-  $input: mat-typography-level(14px * $scale, 1.125, 400)
+        $font-family: 'Roboto, "Helvetica Neue", sans-serif',
+        $display-4:
+                mat-typography-level(
+                                112px * $scale,
+                                112px * $scale,
+                                300,
+                        $letter-spacing: -0.05em
+                ),
+        $display-3:
+                mat-typography-level(
+                                56px * $scale,
+                                56px * $scale,
+                                400,
+                        $letter-spacing: -0.02em
+                ),
+        $display-2:
+                mat-typography-level(
+                                45px * $scale,
+                                48px * $scale,
+                                400,
+                        $letter-spacing: -0.005em
+                ),
+        $display-1: mat-typography-level(34px * $scale, 40px * $scale, 400),
+        $headline: mat-typography-level(24px * $scale, 32px * $scale, 400),
+        $title: mat-typography-level(20px * $scale, 32px * $scale, 500),
+        $subheading-2: mat-typography-level(16px * $scale, 28px * $scale, 400),
+        $subheading-1: mat-typography-level(15px * $scale, 24px * $scale, 400),
+        $body-2: mat-typography-level(14px * $scale, 24px * $scale, 500),
+        $body-1: mat-typography-level(14px * $scale, 20px * $scale, 400),
+        $caption: mat-typography-level(12px * $scale, 20px * $scale, 400),
+        $button: mat-typography-level(14px * $scale, 14px * $scale, 500),
+        $input: mat-typography-level(14px * $scale, 1.125, 400)
 );
 $theme: mat-light-theme($primary, $accent);
 $theme: map-merge(
-  $theme,
-  (
-    typography: $typography
-  )
+                $theme,
+                (
+                        typography: $typography
+                )
 );
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px * $scale;
 }
+
+.mat-icon {
+  svg {
+    g {
+      transform: scale($body-font/24);
+    }
+  }
+}
+
 @include angular-material-theme($theme);
 @include angular-material-typography($typography);
 
