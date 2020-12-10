@@ -1,0 +1,20 @@
+@mixin menu-theme($config-or-theme) {
+  .mat-menu-content:not(:empty) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .mat-menu-item {
+    line-height: inherit !important;
+    height: auto !important;
+    padding: 0 1em !important;
+  }
+
+  .mat-menu-panel {
+    min-width: 8em !important;
+    max-width: 20em !important;
+    max-height: calc(100vh - 3em) !important;
+    border-radius: 0.3em !important;
+    min-height: 0 !important;
+  }
+}

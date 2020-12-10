@@ -53,7 +53,11 @@
   <div class="row">
     <label>Button</label>
     <div class="value">
-      <button mat-stroked-button>Button</button>
+      <button mat-stroked-button [matMenuTriggerFor]="menu">Open menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
     </div>
   </div>
   <div class="row">

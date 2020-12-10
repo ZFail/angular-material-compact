@@ -10,6 +10,7 @@
 @import "./components/slider";
 @import "./components/card";
 @import "./components/expansion-panel";
+@import "./components/menu";
 
 @mixin custom-components-theme($theme) {
   @include button-theme($theme);
@@ -24,4 +25,5 @@
   @include slider-theme($theme);
   @include card-theme($theme);
   @include expansion-panel-theme($theme);
+  @include menu-theme($theme);
 }
