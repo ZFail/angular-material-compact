@@ -1,5 +1,7 @@
 <mat-card class="example-container">
-  <h3>All</h3>
+  <mat-card-header>
+    <mat-card-title>All</mat-card-title>
+  </mat-card-header>
   <div class="row">
     <button mat-raised-button style="margin-right: 0.2em;" (click)="accordion.openAll()">Expand All</button>
     <button mat-raised-button (click)="accordion.closeAll()">Collapse All</button>
@@ -133,10 +135,20 @@
     </div>
   </div>
   <div class="row">
+    <label>Infix input svgIcon</label>
+    <div class="value">
+      <mat-form-field class="example-full-width">
+        <mat-icon matPrefix svgIcon="blender"></mat-icon>
+        <input type="tel" matInput placeholder="555-555-1234">
+        <mat-icon matSuffix>close</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
     <label>Infix input button</label>
     <div class="value">
       <mat-form-field class="example-full-width">
-        <span matPrefix style="color: blue;">+7</span>
+        <span matPrefix >+7</span>
         <!--                <mat-icon matPrefix>mode_edit</mat-icon>-->
         <input type="tel" matInput placeholder="555-555-1234">
         <button
@@ -201,9 +213,9 @@
     </div>
   </div>
   <div class="row">
-    <label>Slider</label>
+    <label>Font size ({{fontSize}}px)</label>
     <div class="value">
-      <mat-slider value="50"></mat-slider>
+      <mat-slider [thumbLabel]="true" [value]="fontSize" (valueChange)="onFontChange($event)"></mat-slider>
     </div>
   </div>
   <div class="row">
@@ -218,6 +230,9 @@
         <button mat-icon-button class="example-icon favorite-icon"
                 aria-label="Example icon-button with heart icon">
           <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon svgIcon="blender"></mat-icon>
         </button>
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
           <mat-icon>share</mat-icon>

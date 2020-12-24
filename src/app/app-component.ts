@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
 
 /** @title Select with custom trigger text */
 @Component({
@@ -8,8 +10,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   tab = 0;
-  constructor() {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     this.tab = parseInt(window.localStorage.getItem("tab") || "0");
+    // iconRegistry.addSvgIcon(
+    //   'thumb',
+    //   sanitizer.bypassSecurityTrustResourceUrl('assets/thumb.svg'));
   }
 
   selectTab(tab: number) {

@@ -7,6 +7,7 @@
   }
   .mat-slider-horizontal {
     height: 1.4em !important;
+    min-width: auto !important;
   }
   .mat-slider-horizontal .mat-slider-wrapper {
     top: auto !important;
@@ -18,5 +19,13 @@
     bottom: -0.5em !important;
     width: 1em !important;
     height: 1em !important;
+  }
+  .mat-slider-thumb-label {
+    width: 2em !important;
+    height: 2em !important;
+  }
+  .mat-slider-horizontal .mat-slider-thumb-label {
+    right: -1em !important;
+    top: -2.86em !important;
   }
 }

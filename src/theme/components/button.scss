@@ -21,14 +21,13 @@
   .mat-icon {
     height: 1em !important;
     width: 1em !important;
-    font-size: 1em !important;
+    font-size: 1.3em !important;
   }
   .mat-mini-fab .mat-button-wrapper {
     padding: 0 !important;
     line-height: 1em !important;
   }
   .mat-mini-fab {
-    line-height: 1.4em !important;
     padding: 0 !important;
     width: 1.4em !important;
     height: 1.4em !important;
@@ -54,9 +53,9 @@
   //}
   .mat-mini-fab .mat-button-wrapper,
   .mat-icon-button .mat-button-wrapper {
-    width: 1em !important;
-    height: 1em !important;
-    line-height: 1em !important;
+    //width: 1em !important;
+    //height: 1em !important;
+    //line-height: 1em !important;
     //display: inline-block !important;
   }
 }

@@ -10,6 +10,7 @@ export class FormFieldComponent implements OnInit {
   toppings = new FormControl();
 
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  noneSel: null;
   constructor() {
     this.toppings.setValue(['Onion', 'Pepperoni'])
 

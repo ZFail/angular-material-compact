@@ -22,4 +22,11 @@
             >
         </mat-chip-list>
     </mat-form-field>
+  <mat-form-field>
+    <mat-select [(ngModel)]="noneSel" placeholder="Mask">
+      <mat-option [value]="null">None</mat-option>
+      <mat-option [value]="1">1</mat-option>
+      <mat-option [value]="2">2</mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>

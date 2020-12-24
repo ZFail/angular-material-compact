@@ -12,35 +12,35 @@ $typography: mat-typography-config(
         $font-family: 'Roboto, "Helvetica Neue", sans-serif',
         $display-4:
                 mat-typography-level(
-                                112px * $scale,
-                                112px * $scale,
+                                8em,
+                                1,
                                 300,
                         $letter-spacing: -0.05em
                 ),
         $display-3:
                 mat-typography-level(
-                                56px * $scale,
-                                56px * $scale,
+                                4em,
+                                1,
                                 400,
                         $letter-spacing: -0.02em
                 ),
         $display-2:
                 mat-typography-level(
-                                45px * $scale,
-                                48px * $scale,
+                                3.2em,
+                                1.07,
                                 400,
                         $letter-spacing: -0.005em
                 ),
-        $display-1: mat-typography-level(34px * $scale, 40px * $scale, 400),
-        $headline: mat-typography-level(24px * $scale, 32px * $scale, 400),
-        $title: mat-typography-level(20px * $scale, 32px * $scale, 500),
-        $subheading-2: mat-typography-level(16px * $scale, 28px * $scale, 400),
-        $subheading-1: mat-typography-level(15px * $scale, 24px * $scale, 400),
-        $body-2: mat-typography-level(14px * $scale, 24px * $scale, 500),
-        $body-1: mat-typography-level(14px * $scale, 20px * $scale, 400),
-        $caption: mat-typography-level(12px * $scale, 20px * $scale, 400),
-        $button: mat-typography-level(14px * $scale, 14px * $scale, 500),
-        $input: mat-typography-level(14px * $scale, 1.125, 400)
+        $display-1: mat-typography-level(2.4em, 1.2, 400),
+        $headline: mat-typography-level(1.71em, 1.5, 400),
+        $title: mat-typography-level(1.286em, 1.5, 500),
+        $subheading-2: mat-typography-level(1.14em, 1.5, 400),
+        $subheading-1: mat-typography-level(1.07em, 1.2, 400),
+        $body-2: mat-typography-level(1em, 1.125, 500),
+        $body-1: mat-typography-level(1em, 1.125, 400),
+        $caption: mat-typography-level(0.875em, 1.125, 400),
+        $button: mat-typography-level(1em, 1, 500),
+        $input: mat-typography-level(1em, 1.125, 400)
 );
 $theme: mat-light-theme($primary, $accent);
 $theme: map-merge(
@@ -50,18 +50,14 @@ $theme: map-merge(
                 )
 );
 
+:root {
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px * $scale;
-}
-
-.mat-icon {
-  svg {
-    g {
-      transform: scale($body-font/24);
-    }
-  }
+  font-size: 1rem;
 }
 
 @include angular-material-theme($theme);
