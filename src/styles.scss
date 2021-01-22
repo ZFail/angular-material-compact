@@ -6,3 +6,9 @@ body {
   background-color: grey;
 }
 
+.fake-cursor {
+  position: fixed;
+  z-index: 1000;
+  top: -0.5em;
+  left: -0.5em;
+}

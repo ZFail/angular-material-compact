@@ -11,6 +11,7 @@ export class AllComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
   fontSize = 14;
+  numberValue = 10;
   constructor() {
         this.toppings.setValue(['Onion', 'Pepperoni'])
 
