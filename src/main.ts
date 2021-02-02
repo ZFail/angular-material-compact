@@ -7,8 +7,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DemoMaterialModule} from './app/material-module';
-import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import {AppMaterialModule} from './app/app-material.module';
 
 import {AppComponent} from './app/app-component';
 import {ButtonsComponent} from './app/components/buttons/buttons';
@@ -17,7 +16,7 @@ import {ChipsComponent} from './app/components/chips/chips.component';
 import {ListComponent} from './app/components/list/list.component';
 import {FormFieldComponent} from './app/components/form-field/form-field.component';
 import {LayoutComponent} from './app/components/layout/layout.component';
-import {DraggableNumberComponent} from './app/components/draggable-number/draggable-number.component';
+import {DraggableNumberModule} from './app/components/draggable-number/draggable-number.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -28,9 +27,10 @@ import {DraggableNumberComponent} from './app/components/draggable-number/dragga
         BrowserAnimationsModule,
         FormsModule,
         HttpClientModule,
-        DemoMaterialModule,
+        AppMaterialModule,
         MatNativeDateModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        DraggableNumberModule,
     ],
     entryComponents: [AppComponent],
 
@@ -42,7 +42,6 @@ import {DraggableNumberComponent} from './app/components/draggable-number/dragga
         ListComponent,
         FormFieldComponent,
         LayoutComponent,
-        DraggableNumberComponent,
     ],
     bootstrap: [AppComponent]
 })

@@ -119,24 +119,30 @@
   <div class="row">
     <label>Number input</label>
     <mat-form-field class="value">
-<!--      <div matPrefix>-->
-<!--        <mat-icon >mode_edit</mat-icon>-->
-<!--      </div>-->
-
-      <input matInput placeholder="text" value="Text input" type="number" [(ngModel)]="numberValue"/>
-      <app-draggable-number matPrefix [(ngModel)]="numberValue">
-<!--        <span>X</span>-->
+      <input matInput placeholder="text" type="number" [(ngModel)]="numberValue" [step]="0.1"/>
+      <app-draggable-number matPrefix [(value)]="numberValue" [step]="2.5" [frequency]="10" [min]="0" [max]="100">
         <mat-icon>sync_alt</mat-icon>
       </app-draggable-number>
     </mat-form-field>
-<!--    <app-draggable-number [(ngModel)]="numberValue">-->
-<!--      <mat-icon >sync_alt</mat-icon>-->
-<!--    </app-draggable-number>-->
-<!--    <div class="value">-->
-<!--      <mat-form-field>-->
-<!--        <input matInput placeholder="text" value="Text input" type="number" [(ngModel)]="numberValue"/>-->
-<!--      </mat-form-field>-->
-<!--    </div>-->
+  </div>
+  <div class="row">
+    <label>Number input</label>
+    <app-draggable-number [(value)]="numberValue" [step]="2.5" [frequency]="1" class="value">
+      <mat-form-field>
+        <input matInput placeholder="text" type="number" [(ngModel)]="numberValue" [step]="0.1"/>
+      </mat-form-field>
+    </app-draggable-number>
+  </div>
+  <div class="row">
+    <label>Number input</label>
+    <app-draggable-number-input [(value)]="numberValue"
+                                [step]="2.5"
+                                [frequency]="1"
+                                blur
+                                prefixText="+7"
+                                suffixSvgIcon="blender"
+                                class="value">
+    </app-draggable-number-input>
   </div>
   <div class="row">
     <label>Infix input icon</label>
